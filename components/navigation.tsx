@@ -145,6 +145,15 @@ export function Navigation() {
           >
             Contacto
           </Link>
+
+          {/** Blog */}
+          <Link
+            href="/blog"
+            title="Blog | Hello Odontología Medellín"
+            className="text-sm font-medium hover:text-primary transition-colors"
+          >
+            Blog
+          </Link>
         </nav>
 
         {/* CTA */}
@@ -212,6 +221,14 @@ export function Navigation() {
                 className="text-lg font-medium hover:text-primary"
               >
                 Contacto
+              </Link>
+
+              <Link
+                href="/blog"
+                onClick={() => setIsOpen(false)}
+                className="text-lg font-medium hover:text-primary"
+              >
+                Blog
               </Link>
 
               <Button
