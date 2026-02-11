@@ -17,10 +17,22 @@ export function WhatsAppButton() {
     <Button
       onClick={handleWhatsAppClick}
       size="icon"
-      className="fixed bottom-6 right-6 h-14 w-14 rounded-full shadow-lg bg-[#25D366] hover:bg-[#20BA5A] text-white z-50"
+      className="
+    fixed bottom-6 right-6 
+    h-16 w-16 
+    rounded-full 
+    bg-[#25D366] hover:bg-[#20BA5A] 
+    text-white 
+    z-50
+    shadow-[0_0_25px_rgba(37,211,102,0.6)]
+    animate-[float_3s_ease-in-out_infinite]
+    before:absolute before:inset-0 before:rounded-full
+    before:bg-[#25D366] before:opacity-40
+    before:animate-ping before:duration-[2500ms]
+  "
       aria-label="Contactar por WhatsApp"
     >
-      <MessageCircle className="h-7 w-7" />
+      <MessageCircle className="h-9 w-9 relative z-10" />
     </Button>
   );
 }
